@@ -1,7 +1,6 @@
-package com.naya.mock_data_annotation.annotation.inject_random;
+package com.naya.mockdata.annotation.annotation.injectrandom;
 
-import com.naya.mock_data_annotation.annotation.inject_random.handlers.MockRandomDataHandler;
-import lombok.AllArgsConstructor;
+import com.naya.mockdata.annotation.annotation.injectrandom.handlers.MockRandomDataHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,8 @@
 package com.naya.mock_data_annotation.annotation;
 
-import com.naya.mock_data_annotation.annotation.inject_random.InjectRandom;
-import com.naya.mock_data_annotation.annotation.inject_random.MockDataType;
+import com.naya.mockdata.annotation.annotation.injectrandom.InjectRandom;
+
+import com.naya.mockdata.annotation.annotation.injectrandom.MockDataType;
 import lombok.Getter;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;

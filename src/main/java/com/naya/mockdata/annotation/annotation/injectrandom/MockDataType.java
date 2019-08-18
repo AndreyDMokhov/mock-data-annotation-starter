@@ -1,4 +1,4 @@
-package com.naya.mock_data_annotation.annotation.inject_random;
+package com.naya.mockdata.annotation.annotation.injectrandom;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

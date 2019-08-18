@@ -1,9 +1,9 @@
-package com.naya.mock_data_annotation.configuration;
+package com.naya.mockdata.annotation.configuration;
 
 import com.github.javafaker.Faker;
-import com.naya.mock_data_annotation.annotation.inject_random.InjectRandomAnnotationBeanPostProcessor;
-import com.naya.mock_data_annotation.annotation.inject_random.MockDataType;
-import com.naya.mock_data_annotation.annotation.inject_random.handlers.MockRandomDataHandler;
+import com.naya.mockdata.annotation.annotation.injectrandom.InjectRandomAnnotationBeanPostProcessor;
+import com.naya.mockdata.annotation.annotation.injectrandom.MockDataType;
+import com.naya.mockdata.annotation.annotation.injectrandom.handlers.MockRandomDataHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -17,7 +17,7 @@ import java.util.Map;
 import static java.util.stream.Collectors.toMap;
 
 @Configuration
-@ComponentScan({"com.naya.mock_data_annotation"})
+@ComponentScan({"com.naya"})
 @ConditionalOnClass(Faker.class)
 public class Config {
 
@@ -28,8 +28,8 @@ public class Config {
     }
 
     @Bean
-    public Map<MockDataType, MockRandomDataHandler> initMap(@Autowired List<MockRandomDataHandler> handlers) {
-        return handlers.stream().collect(toMap(MockRandomDataHandler::getType, v -> v));
+    public Map<MockDataType, MockRandomDataHandler> initMap(@Autowired List<MockRandomDataHandler> handlersList) {
+        return handlersList.stream().collect(toMap(MockRandomDataHandler::getType, v -> v));
     }
 
     @Bean

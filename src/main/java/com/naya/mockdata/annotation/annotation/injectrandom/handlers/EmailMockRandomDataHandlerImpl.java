@@ -1,8 +1,9 @@
-package com.naya.mock_data_annotation.annotation.inject_random.handlers;
+package com.naya.mockdata.annotation.annotation.injectrandom.handlers;
 
 
 import com.github.javafaker.Faker;
-import com.naya.mock_data_annotation.annotation.inject_random.MockDataType;
+
+import com.naya.mockdata.annotation.annotation.injectrandom.MockDataType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.stereotype.Service;
