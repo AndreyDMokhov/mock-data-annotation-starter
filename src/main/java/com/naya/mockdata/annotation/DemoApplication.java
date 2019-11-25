@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 //@SpringBootApplication
-public class DemoApplication implements CommandLineRunner {
+public class DemoApplication  {
 
     @Autowired
     ApplicationContext applicationContext;
@@ -16,11 +16,5 @@ public class DemoApplication implements CommandLineRunner {
 
         SpringApplication.run(DemoApplication.class, args);
     }
-    @Override
-    public void run(String... args) throws Exception {
 
-        User userMock = applicationContext.getBean(User.class);
-        System.out.println(userMock);
-
-    }
 }
