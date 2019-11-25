@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.stereotype.Service;
 
-@Service("PHONE_NUM")
+
 @AllArgsConstructor
 @Data
 public class PhoneNumberMockRandomDataHandlerImpl implements MockRandomDataHandler {

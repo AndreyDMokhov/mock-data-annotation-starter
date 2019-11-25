@@ -7,7 +7,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.stereotype.Service;
 
-@Service("NAME")
+
+
 @AllArgsConstructor
 @Data
 public class NameMockRandomDataHandlerImpl implements MockRandomDataHandler {
@@ -16,7 +17,6 @@ public class NameMockRandomDataHandlerImpl implements MockRandomDataHandler {
 
     @Override
     public String data() {
-
         return faker.name().firstName();
     }
 

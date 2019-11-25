@@ -8,7 +8,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.stereotype.Service;
 
-@Service("EMAIL")
 @AllArgsConstructor
 @Data
 public class EmailMockRandomDataHandlerImpl implements MockRandomDataHandler {

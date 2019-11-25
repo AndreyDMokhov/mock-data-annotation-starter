@@ -1,6 +1,8 @@
 package com.naya.mock_data_annotation.annotation;
 
 
+import com.naya.mockdata.annotation.User;
+import com.naya.mockdata.annotation.configuration.Config;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,13 +12,15 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class MockDataAnnotationApplicationTests {
 
-    private ApplicationContext context;
+       private ApplicationContext context;
+
+
+
 
 
     @Before
     public void init() {
-        context = new AnnotationConfigApplicationContext("com.naya.mock_data_annotation");
-    }
+        context = new AnnotationConfigApplicationContext(Config.class);    }
 
     @Test
     public void injectRandomAnnotationPositive() {

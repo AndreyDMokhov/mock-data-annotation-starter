@@ -5,8 +5,13 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public enum MockDataType {
+public enum MockDataType implements Type {
     EMAIL,
     PHONE_NUMBER,
-    NAME
+    NAME;
+
+    @Override
+    public Type getType() {
+        return null;
+    }
 }

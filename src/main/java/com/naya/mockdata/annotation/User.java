@@ -1,4 +1,4 @@
-package com.naya.mock_data_annotation.annotation;
+package com.naya.mockdata.annotation;
 
 import com.naya.mockdata.annotation.annotation.injectrandom.InjectRandom;
 
@@ -7,7 +7,7 @@ import lombok.Getter;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
+
 @Scope("prototype")
 @Getter
 public class User {
